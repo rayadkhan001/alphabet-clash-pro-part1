@@ -1,28 +1,44 @@
 // ek bar code likhsi. akhon shudhu aikhan theke nam call kore kaj korbo.
+// bibhinno jaigai use kora hobe ai code ta tai alada independent bhabe likhsi 
+// aitao same ager 2 tar moto. Showed bgc in add
+// hidden bgc in remove same accept for bgc.
+// aita shudhu random alphabet ber korar jonno likha hoise simply.
+
+
+
 function hideElementById(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('hidden');
 }
 
-// bibhinno jaigai use kora hobe ai code ta tai alada independent bhabe likhsi 
+
 function showElementById(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('hidden');
 }
 
-// aitao same ager 2 tar moto. Showed bgc in add
 function setBackgroundColorById(elementId){
     const element = document.getElementById(elementId);
     element.classList.add('bg-orange-400'); 
 }
 
-// hidden bgc in remove same accept for bgc.
 function removeBackgroundColorById(elementId){
     const element = document.getElementById(elementId);
     element.classList.remove('bg-orange-400');
 }
 
-// aita shudhu random alphabet ber korar jonno likha hoise simply.
+function getTextElementValueById(elementId){
+    const element = document.getElementById(elementId);
+    const elementValueText = element.innerText;
+    const value = parseInt(elementValueText);
+    return value;
+}
+
+function setTextElementValueById(elementId, value){
+    const element = document.getElementById(elementId);
+    element.innerText = value;
+}
+
 function getARandomAlphabet(){
     const alphabetString = 'abcdefghijklmnopqrstuvwxyz';
     const alphabets = alphabetString.split('');
