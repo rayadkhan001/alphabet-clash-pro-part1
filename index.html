@@ -96,13 +96,13 @@
                         <img src="images/heart.svg" alt="heart">
                         <span id="current-life">5</span>
                     </button>
+
                     <!-- display Score -->
                     <button class="btn rounded-full bg-[#894189] text-white px-4">
                         score
                         <img src="images/monetization_on.svg" alt="heart">
                         <span id="current-score">0</span> 
-                        
-                      </button>
+                    </button>
                 </div>
                 <!-- Display life score ends -->
 
@@ -111,13 +111,14 @@
         <!-- playground end -->
 
         <!-- final score starts -->
-        <section class="min-h-screen score flex justify-center items-center hidden">
+        <section id="final-score" class="flex min-h-screen justify-center items-center hidden">
             <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
+                <h4 class="text-3xl">Game Over !</h4>
                 <h1 class="text-6xl p-4">
                     <span class="font-extrabold text-white">Score:</span> 
                     <span class="text-white">14</span>
                 </h1>
-                <button class="btn bg-white text-xl text-black hover:text-white">Play Again</button>
+                <button onclick="play()" class="btn bg-white text-xl text-black hover:text-white">Play Again</button>
                 <p class="text-white">Practice will make you Pro</p>
             </div>
         </section>
